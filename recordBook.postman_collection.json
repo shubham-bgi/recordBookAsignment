@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "e5d4dd65-5a37-4f29-94d5-d6a58f1dbb6d",
+		"name": "recordBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11162188"
+	},
+	"item": [
+		{
+			"name": "insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    [\r\n        \"Shubham\",\r\n        \"Second Name\",\r\n        \"s.aggarwal@gmail.com\"\r\n    ],\r\n    [\r\n        \"Aman\",\r\n        \"Kumar\",\r\n        \"akumar@gmail.com\"\r\n    ],\r\n    [\r\n        \"Manish\",\r\n        \"Rithaliya\",\r\n        \"mRithaliya@gmail.com\"\r\n    ]\r\n]"
+				},
+				"url": {
+					"raw": "localhost:8080?range=A2:C8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"query": [
+						{
+							"key": "range",
+							"value": "A2:C8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    [\r\n        \"Updated\",\r\n        \"Name\",\r\n        \"updated@gmail.com\"\r\n    ]\r\n]"
+				},
+				"url": {
+					"raw": "localhost:8080?range=A2:C2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"query": [
+						{
+							"key": "range",
+							"value": "A2:C2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"query": [
+						{
+							"key": "range",
+							"value": "A1:C10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080?range=A5:C",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"query": [
+						{
+							"key": "range",
+							"value": "A5:C"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
